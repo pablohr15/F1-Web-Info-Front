@@ -1,0 +1,114 @@
+<div *ngIf="driver.team == 'Red Bull Racing'">
+    <div class="photo-div red-bull">
+        <span class="name-number"><h4 style="color: white; text-shadow: 2px 2px 0px lightcoral, 4px 4px 0px red, 6px 6px 0px black">{{driver.name}}</h4> <img class="bg-white driver-number" src="{{driver.driverNumberUrl}}" alt=""></span>
+        <img src="/assets/img/{{driver.imageDetail}}" style="margin: 0 auto; width: 100%;" alt="Driver Gif">
+    </div>
+</div>
+
+<div *ngIf="driver.team == 'Ferrari'">
+    <div class="photo-div ferrari">
+        <span class="name-number"><h4 style="color: white; text-shadow: 2px 2px 0px lightcoral, 4px 4px 0px red, 6px 6px 0px black">{{driver.name}}</h4> <img class="bg-white driver-number" src="{{driver.driverNumberUrl}}" alt=""></span>
+        <img src="/assets/img/{{driver.imageDetail}}" style="margin: 0 auto; width: 100%;" alt="Driver Gif">
+    </div>
+</div>
+
+<div *ngIf="driver.team == 'Mercedes'">
+    <div class="photo-div mercedes">
+        <span class="name-number"><h4 style="color: white; text-shadow: 2px 2px 0px lightcoral, 4px 4px 0px red, 6px 6px 0px black">{{driver.name}}</h4> <img class="bg-white driver-number" src="{{driver.driverNumberUrl}}" alt=""></span>
+        <img src="/assets/img/{{driver.imageDetail}}" style="margin: 0 auto; width: 100%;" alt="Driver Gif">
+    </div>
+</div>
+
+<div *ngIf="driver.team == 'Aston Martin'">
+    <div class="photo-div aston-martin">
+        <span class="name-number"><h4 style="color: white; text-shadow: 2px 2px 0px lightcoral, 4px 4px 0px red, 6px 6px 0px black">{{driver.name}}</h4> <img class="bg-white driver-number" src="{{driver.driverNumberUrl}}" alt=""></span>
+        <img src="/assets/img/{{driver.imageDetail}}" style="margin: 0 auto; width: 100%;" alt="Driver Gif">
+    </div>
+</div>
+
+<div *ngIf="driver.team == 'Haas F1 Team'">
+    <div class="photo-div haas">
+        <span class="name-number"><h4 style="color: white; text-shadow: 2px 2px 0px lightcoral, 4px 4px 0px red, 6px 6px 0px black">{{driver.name}}</h4> <img class="bg-white driver-number" src="{{driver.driverNumberUrl}}" alt=""></span>
+        <img src="/assets/img/{{driver.imageDetail}}" style="margin: 0 auto; width: 100%;" alt="Driver Gif">
+    </div>
+</div>
+
+<div *ngIf="driver.team == 'Alpine'">
+    <div class="photo-div alpine">
+        <span class="name-number"><h4 style="color: white; text-shadow: 2px 2px 0px lightcoral, 4px 4px 0px red, 6px 6px 0px black">{{driver.name}}</h4> <img class="bg-white driver-number" src="{{driver.driverNumberUrl}}" alt=""></span>
+        <img src="/assets/img/{{driver.imageDetail}}" style="margin: 0 auto; width: 100%;" alt="Driver Gif">
+    </div>
+</div>
+
+<div *ngIf="driver.team == 'McLaren'">
+    <div class="photo-div mclaren">
+        <span class="name-number"><h4 style="color: white; text-shadow: 2px 2px 0px lightcoral, 4px 4px 0px red, 6px 6px 0px black">{{driver.name}}</h4> <img class="bg-white driver-number" src="{{driver.driverNumberUrl}}" alt=""></span>
+        <img src="/assets/img/{{driver.imageDetail}}" style="margin: 0 auto; width: 100%;" alt="Driver Gif">
+    </div>
+</div>
+
+<div *ngIf="driver.team == 'Alfa Romeo'">
+    <div class="photo-div alfa-romeo">
+        <span class="name-number"><h4 style="color: white; text-shadow: 2px 2px 0px lightcoral, 4px 4px 0px red, 6px 6px 0px black">{{driver.name}}</h4> <img class="bg-white driver-number" src="{{driver.driverNumberUrl}}" alt=""></span>
+        <img src="/assets/img/{{driver.imageDetail}}" style="margin: 0 auto; width: 100%;" alt="Driver Gif">
+    </div>
+</div>
+
+<div *ngIf="driver.team == 'AlphaTauri'">
+    <div class="photo-div alpha-tauri">
+        <span class="name-number"><h4 style="color: white; text-shadow: 2px 2px 0px lightcoral, 4px 4px 0px red, 6px 6px 0px black">{{driver.name}}</h4> <img class="bg-white driver-number" src="{{driver.driverNumberUrl}}" alt=""></span>
+        <img src="/assets/img/{{driver.imageDetail}}" style="margin: 0 auto; width: 100%;" alt="Driver Gif">
+    </div>
+</div>
+
+<div *ngIf="driver.team == 'Williams'">
+    <div class="photo-div williams">
+        <span class="name-number"><h4 style="color: white; text-shadow: 2px 2px 0px lightcoral, 4px 4px 0px red, 6px 6px 0px black">{{driver.name}}</h4> <img class="bg-white driver-number" src="{{driver.driverNumberUrl}}" alt=""></span>
+        <img src="/assets/img/{{driver.imageDetail}}" style="margin: 0 auto; width: 100%;" alt="Driver Gif">
+    </div>
+</div>
+
+<div class="container driver-info" style="width: 70%; border: 10px solid black;">
+    <div class="row">
+        <div class="col-md-12 bg-light">
+            <div class="container my-5">
+                <div class="row my-3">
+                    <p class="data-table-head col-6 justify-content-start">Team</p>
+                    <p class="data-table-body col-6 justify-content-start">{{driver.team}}</p>
+                </div>
+                <hr>
+                <div class="row my-3">
+                    <p class="data-table-head col-6 justify-content-start">Country</p>
+                    <p class="data-table-body col-6 justify-content-start">{{driver.country}} <img class="country-flag" src="{{driver.countryFlag}}" alt=""></p>
+                </div>
+                <hr>
+                <div class="row my-3">
+                    <p class="data-table-head col-6 justify-content-start">Podiums</p>
+                    <p class="data-table-body col-6 justify-content-start">{{driver.podiums}}</p>
+                </div>
+                <hr>
+                <div class="row my-3">
+                    <p class="data-table-head col-6 justify-content-start">Best Result</p>
+                    <p class="data-table-body col-6 justify-content-start">{{driver.highestResult}}</p>
+                </div>
+                <hr>
+                <div class="row my-3">
+                    <p class="data-table-head col-6 justify-content-start">World Championships</p>
+                    <p class="data-table-body col-6 justify-content-start">{{driver.worldChampionships}}</p>
+                </div>
+                <hr>
+                <div class="row my-3">
+                    <p class="data-table-head col-6 justify-content-start">Date of Birth</p>
+                    <p class="data-table-body col-6 justify-content-start">{{driver.birthDate}}</p>
+                </div>
+                <hr>
+                <div class="row my-3">
+                    <p class="data-table-head col-6 justify-content-start align-items-center">Helmet</p>
+                    <img class="data-table-body col-6 justify-content-start" src="{{driver.helmet}}" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,129 @@
+<div class="container bg-white border title-box">
+    <div class="row">
+        <h1 class="f1-title text-center col-12 my-5">Drivers</h1>
+    </div>
+    
+</div>
+
+<div class="row">        
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-3" *ngFor="let driver of drivers">
+        <div [ngSwitch]="driver.team">
+            <div *ngSwitchCase="'Red Bull Racing'" (click)="detailDriver(driver.id)" class="card card-red-bull" style="width: 18rem;">
+                <img src="{{driver.image}}" class="card-source red-bull card-img-top bg-pilot red-bull" alt="...">
+                <div class="container card-body my-3">
+                    <div class="row">
+                        <h5 class="col-9 card-title" style="font-weight: bold;">{{driver.name}}</h5>
+                        <img class="col-3" src="{{driver.driverNumberUrl}}" alt="...">
+                    </div>        
+                    <p class="card-text">{{driver.team}}</p>
+                </div>
+            </div>
+            <div *ngSwitchCase="'Ferrari'" (click)="detailDriver(driver.id)" class="card card-ferrari" style="width: 18rem;">                
+                <img src="{{driver.image}}" class="card-source ferrari card-img-top bg-pilot ferrari" alt="...">
+                <div class="container card-body my-3">
+                    <div class="row">
+                        <h5 class="col-9 card-title" style="font-weight: bold;">{{driver.name}}</h5>
+                        <img class="col-3" src="{{driver.driverNumberUrl}}" alt="...">
+                    </div>        
+                    <p class="card-text">{{driver.team}}</p>
+                </div>
+            </div>
+            <div *ngSwitchCase="'Mercedes'" (click)="detailDriver(driver.id)" class="card card-mercedes" style="width: 18rem;">                
+                <img src="{{driver.image}}" class="card-source mercedes card-img-top bg-pilot mercedes" alt="...">
+                <div class="container card-body my-3">
+                    <div class="row">
+                        <h5 class="col-9 card-title" style="font-weight: bold;">{{driver.name}}</h5>
+                        <img class="col-3" src="{{driver.driverNumberUrl}}" alt="...">
+                    </div>        
+                    <p class="card-text">{{driver.team}}</p>
+                </div>
+            </div>
+            <div *ngSwitchCase="'Aston Martin'" (click)="detailDriver(driver.id)" class="card card-aston-martin" style="width: 18rem;">
+                <img src="{{driver.image}}" class="card-source aston-martin card-img-top bg-pilot aston-martin" alt="...">
+                <div class="container card-body my-3">
+                    <div class="row">
+                        <h5 class="col-9 card-title" style="font-weight: bold;">{{driver.name}}</h5>
+                        <img class="col-3" src="{{driver.driverNumberUrl}}" alt="...">
+                    </div>        
+                    <p class="card-text">{{driver.team}}</p>
+                </div>
+            </div>
+            <div *ngSwitchCase="'Alpine'" (click)="detailDriver(driver.id)" class="card card-alpine" style="width: 18rem;">                
+                <img src="{{driver.image}}" class="card-source alpine card-img-top bg-pilot alpine" alt="...">
+                <div class="container card-body my-3">
+                    <div class="row">
+                        <h5 class="col-9 card-title" style="font-weight: bold;">{{driver.name}}</h5>
+                        <img class="col-3" src="{{driver.driverNumberUrl}}" alt="...">
+                    </div>        
+                    <p class="card-text">{{driver.team}}</p>
+                </div>
+            </div>
+            <div *ngSwitchCase="'McLaren'" (click)="detailDriver(driver.id)" class="card card-mclaren" style="width: 18rem;">                
+                <img src="{{driver.image}}" class="card-source mclaren card-img-top bg-pilot mclaren" alt="...">
+                <div class="container card-body my-3">
+                    <div class="row">
+                        <h5 class="col-9 card-title" style="font-weight: bold;">{{driver.name}}</h5>
+                        <img class="col-3" src="{{driver.driverNumberUrl}}" alt="...">
+                    </div>        
+                    <p class="card-text">{{driver.team}}</p>
+                </div>
+            </div>
+            <div *ngSwitchCase="'Haas F1 Team'" (click)="detailDriver(driver.id)" class="card card-haas" style="width: 18rem;">                
+                <img src="{{driver.image}}" class="card-source haas card-img-top bg-pilot haas" alt="...">
+                <div class="container card-body my-3">
+                    <div class="row">
+                        <h5 class="col-9 card-title" style="font-weight: bold;">{{driver.name}}</h5>
+                        <img class="col-3" src="{{driver.driverNumberUrl}}" alt="...">
+                    </div>        
+                    <p class="card-text">{{driver.team}}</p>
+                </div>
+            </div>
+            <div *ngSwitchCase="'Alfa Romeo'" (click)="detailDriver(driver.id)" class="card card-alfa-romeo" style="width: 18rem;">                
+                <img src="{{driver.image}}" class="card-source alfa-romeo card-img-top bg-pilot alfa-romeo" alt="...">
+                <div class="container card-body my-3">
+                    <div class="row">
+                        <h5 class="col-9 card-title" style="font-weight: bold;">{{driver.name}}</h5>
+                        <img class="col-3" src="{{driver.driverNumberUrl}}" alt="...">
+                    </div>        
+                    <p class="card-text">{{driver.team}}</p>
+                </div>
+            </div>
+            <div *ngSwitchCase="'AlphaTauri'" (click)="detailDriver(driver.id)" class="card card-alpha-tauri" style="width: 18rem;">                
+                <img src="{{driver.image}}" class="card-source alpha-tauri card-img-top bg-pilot alpha-tauri" alt="...">
+                <div class="container card-body my-3">
+                    <div class="row">
+                        <h5 class="col-9 card-title" style="font-weight: bold;">{{driver.name}}</h5>
+                        <img class="col-3" src="{{driver.driverNumberUrl}}" alt="...">
+                    </div>        
+                    <p class="card-text">{{driver.team}}</p>
+                </div>
+            </div>
+            <div *ngSwitchCase="'Williams'" (click)="detailDriver(driver.id)" class="card card-williams" style="width: 18rem;">                
+                <img src="{{driver.image}}" class="card-source williams card-img-top bg-pilot williams" alt="...">
+                <div class="container card-body my-3">
+                    <div class="row">
+                        <h5 class="col-9 card-title" style="font-weight: bold;">{{driver.name}}</h5>
+                        <img class="col-3" src="{{driver.driverNumberUrl}}" alt="...">
+                    </div>        
+                    <p class="card-text">{{driver.team}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--<div class="row">        
+    <div class="card col-12 col-md-6 col-lg-4 col-xl-3 f1 my-3" *ngFor="let driver of drivers">
+        <h3 class="card-text-top">{{driver.driverNumber}}</h3>
+        <img src="{{driver.image}}" class="card-img-top bg-white" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{driver.name}}</h5>
+            <p class="card-text">{{driver.team}}</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>-->

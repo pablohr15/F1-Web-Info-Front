@@ -1,0 +1,312 @@
+:root{
+    --color-aston-martin: #388c74;
+    --color-red-bull: #3874c4;
+    --color-ferrari: #ff1434;
+    --color-mercedes: #70d4bc;
+    --color-mclaren: #f88424;
+    --color-alpine: #2894d4;
+    --color-haas: #b8bcbc;
+    --color-williams: #38bcdc;
+    --color-alfa-romeo: #d02c4c;
+    --color-alpha-tauri: #608cac;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-white{
+    background: #ffffff;
+}
+
+.bg-light-brown{
+    background-color: #fce7cf;
+}
+
+.card{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-width: 1px;
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 10px;
+    box-shadow: 8px 8px 4px;
+    position: relative;
+    width: 300px!important;
+    animation: fadeIn .5s ease-in-out;
+    transition: .5s all ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; margin-left: -100%;}
+    100% { opacity: 1; }
+  }
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card:hover .bg-pilot.red-bull{
+    background: var(--color-red-bull);
+    box-shadow: 0 0 10px var(--color-red-bull), 0 0 40px white, 0 0 80px var(--color-red-bull)!important;
+    
+}
+
+.card:hover .bg-pilot.ferrari{
+    background: var(--color-ferrari);
+    box-shadow: 0 0 10px var(--color-ferrari), 0 0 40px white, 0 0 80px var(--color-ferrari)!important;
+}
+
+.card:hover .bg-pilot.aston-martin{
+    background: var(--color-aston-martin);
+    box-shadow: 0 0 10px var(--color-aston-martin), 0 0 40px white, 0 0 80px var(--color-aston-martin)!important;
+}
+
+.card:hover .bg-pilot.mercedes{
+    background: var(--color-mercedes);
+    box-shadow: 0 0 10px var(--color-mercedes), 0 0 40px white, 0 0 80px var(--color-mercedes)!important;
+}
+
+.card:hover .bg-pilot.mclaren{
+    background: var(--color-mclaren);
+    box-shadow: 0 0 10px var(--color-mclaren), 0 0 40px white, 0 0 80px var(--color-mclaren)!important;
+}
+
+.card:hover .bg-pilot.alpine{
+    background: var(--color-alpine);
+    box-shadow: 0 0 10px var(--color-alpine), 0 0 40px white, 0 0 80px var(--color-alpine)!important;
+}
+
+.card:hover .bg-pilot.alfa-romeo{
+    background: var(--color-alfa-romeo);
+    box-shadow: 0 0 10px var(--color-alfa-romeo), 0 0 40px white, 0 0 80px var(--color-alfa-romeo)!important;
+}
+
+.card:hover .bg-pilot.alpha-tauri{
+    background: var(--color-alpha-tauri);
+    box-shadow: 0 0 10px var(--color-alpha-tauri), 0 0 40px white, 0 0 80px var(--color-alpha-tauri)!important;
+}
+
+.card:hover .bg-pilot.haas{
+    background: var(--color-haas);
+    box-shadow: 0 0 10px var(--color-haas), 0 0 40px white, 0 0 80px var(--color-haas)!important;
+}
+
+.card:hover .bg-pilot.williams{
+    background: var(--color-williams);
+    box-shadow: 0 0 10px var(--color-williams), 0 0 40px white, 0 0 80px var(--color-williams)!important;
+}
+
+.bg-pilot{
+    background: #1d1d1d;
+}
+
+.card-source{
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 150px;
+    border-bottom-width: 10px;
+}
+
+.card-source.aston-martin{
+    box-shadow: 0px 10px 5px var(--color-aston-martin);
+    
+}
+.card-source.red-bull{
+    box-shadow: 0px 10px 5px var(--color-red-bull);
+}
+.card-source.mercedes{
+    box-shadow: 0px 10px 5px var(--color-mercedes);
+}
+.card-source.ferrari{
+    box-shadow: 0px 10px 5px var(--color-ferrari);
+}
+.card-source.alpine{
+    box-shadow: 0px 10px 5px var(--color-alpine);
+}
+.card-source.mclaren{
+    box-shadow: 0px 10px 5px var(--color-mclaren);
+}
+.card-source.alfa-romeo{
+    box-shadow: 0px 10px 5px var(--color-alfa-romeo);
+}
+.card-source.alpha-tauri{
+    box-shadow: 0px 10px 5px var(--color-alpha-tauri);
+}
+.card-source.haas{
+    box-shadow: 0px 10px 5px var(--color-haas);
+}
+.card-source.williams{
+    box-shadow: 0px 10px 5px var(--color-williams);
+}
+
+.card-aston-martin{
+    border-color: var(--color-aston-martin);
+}
+.card-red-bull{ 
+    border-color: var(--color-red-bull);
+}
+
+.card-ferrari{
+    border-color: var(--color-ferrari)
+}
+.card-mercedes{
+    border-color: var(--color-mercedes)
+}
+.card-mclaren{
+    border-color: var(--color-mclaren)
+}
+.card-alfa-romeo{
+    border-color: var(--color-alfa-romeo)
+}
+.card-alpha-tauri{
+    border-color: var(--color-alpha-tauri)
+}
+.card-williams{
+    border-color: var(--color-williams)
+}
+.card-haas{
+    border-color: var(--color-haas)
+}
+.card-alpine{
+    border-color: var(--color-alpine);
+}
+
+.btn-detail{
+    background-color: #1d69f5;
+    transition: background-color .5s;
+}
+
+.btn-detail:hover{
+    background-color: #18b8e0;
+}
+
+.navbar-custom{
+    background-color: black;
+}
+
+.border.title-box{
+    border-radius: 15px!important;
+    border-width: 10px!important;
+    border-color: red!important;
+}
+
+h1{
+    font-size:50px;
+}
+
+.detail-photo{
+    border-radius: 20px;
+    height: 500px;
+    width: 500px;
+}
+
+.data-table-head{
+    font-weight:bold;
+    font-size: 20px;
+}
+
+.data-table-body{
+    font-size: 20px;
+}
+
+.f1-title{
+    font-size: 60px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.f1-app{
+    background-color: #000000;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000 40px ), repeating-linear-gradient( #ff000055, #ff0000 );
+}
+
+.f1-main-title{
+    color: white;
+    font-size: 40px;
+}
+
+.text-padding{
+    padding: 10%;
+}
+
+.country-flag{
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+
+.align-right{
+    float: right;
+}
+
+.navbar-brand
+{
+    position:absolute;
+    width:100%;
+    left:0;
+    text-align:center;
+    margin:auto;
+}
+
+.menu{
+    font-size: 20px;
+}
+
+.photo-div{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.photo-div.red-bull{
+    background: var(--color-red-bull);
+}
+.photo-div.mercedes{
+    background: var(--color-mercedes);
+}
+.photo-div.ferrari{
+    background: var(--color-ferrari);
+}
+.photo-div.aston-martin{
+    background: var(--color-aston-martin);
+}
+.photo-div.mclaren{
+    background: var(--color-mclaren);
+}
+.photo-div.alpine{
+    background: var(--color-alpine);
+}
+.photo-div.alpha-tauri{
+    background: var(--color-alpha-tauri);
+}
+.photo-div.alfa-romeo{
+    background: var(--color-alfa-romeo);
+}
+.photo-div.haas{
+    background: var(--color-haas);
+}
+.photo-div.williams{
+    background: var(--color-williams);
+}
+
+h4{
+    padding: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+}
+
+.name-number{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+driver-info{
+    display: flex;
+    margin: 0 auto;
+}
+
