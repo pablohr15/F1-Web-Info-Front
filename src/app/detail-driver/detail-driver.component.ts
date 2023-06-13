@@ -4,6 +4,7 @@ import { DriverService } from '../driver-service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 declare function changeBackgroundColor(team:string):void
+declare function changeBiographyLineColor(team:string):void
 @Component({
   selector: 'app-detail-driver',
   templateUrl: './detail-driver.component.html',
@@ -24,6 +25,7 @@ export class DetailDriverComponent {
           this.driver = driver;
           console.log(this.driver.team)
           changeBackgroundColor(this.driver.team)
+          changeBiographyLineColor(this.driver.team)
         });
     
   }
