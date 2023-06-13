@@ -3,6 +3,9 @@ import { Driver } from '../driver';
 import { DriverService } from '../driver-service';
 import { Router } from '@angular/router';
 
+
+declare function originalBackground():void
+declare function changeBackgroundColor(team:string):void
 @Component({
   selector: 'app-list-drivers',
   templateUrl: './list-drivers.component.html',
@@ -17,6 +20,7 @@ export class ListDriversComponent {
 
   ngOnInit() {
     this.getDrivers();
+    originalBackground();
   }
 
   getDrivers() {
@@ -37,4 +41,7 @@ export class ListDriversComponent {
     this.router.navigate(['drivers', id]);
   }
 
+  changeBackground(team:string){
+    changeBackgroundColor(team);
+  }
 }

@@ -218,7 +218,7 @@ h1{
 .f1-app{
     background-color: #000000;
     opacity: 1;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000 40px ), repeating-linear-gradient( #ff000055, #ff0000 );
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000 40px ), repeating-linear-gradient( #ff0000, #ff0000 );
 }
 
 .f1-main-title{

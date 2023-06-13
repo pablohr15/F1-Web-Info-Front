@@ -3,6 +3,7 @@ import { Driver } from '../driver';
 import { DriverService } from '../driver-service';
 import { ActivatedRoute, Router } from '@angular/router';
 
+declare function changeBackgroundColor(team:string):void
 @Component({
   selector: 'app-detail-driver',
   templateUrl: './detail-driver.component.html',
@@ -21,7 +22,10 @@ export class DetailDriverComponent {
     this.id = this.route.snapshot.params['id'];
     this.driverService.getDriverById(this.id).subscribe(driver => {
           this.driver = driver;
+          console.log(this.driver.team)
+          changeBackgroundColor(this.driver.team)
         });
+    
   }
 
   

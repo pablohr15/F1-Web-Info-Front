@@ -8,7 +8,7 @@
 <div class="row">        
     <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-3" *ngFor="let driver of drivers">
         <div [ngSwitch]="driver.team">
-            <div *ngSwitchCase="'Red Bull Racing'" (click)="detailDriver(driver.id)" class="card card-red-bull" style="width: 18rem;">
+            <div *ngSwitchCase="'Red Bull Racing'" (click)="detailDriver(driver.id); changeBackground(driver.team)" class="card card-red-bull" style="width: 18rem;">
                 <img src="{{driver.image}}" class="card-source red-bull card-img-top bg-pilot red-bull" alt="...">
                 <div class="container card-body my-3">
                     <div class="row">
@@ -18,7 +18,7 @@
                     <p class="card-text">{{driver.team}}</p>
                 </div>
             </div>
-            <div *ngSwitchCase="'Ferrari'" (click)="detailDriver(driver.id)" class="card card-ferrari" style="width: 18rem;">                
+            <div *ngSwitchCase="'Ferrari'" (click)="detailDriver(driver.id); changeBackground(driver.team)" class="card card-ferrari" style="width: 18rem;">                
                 <img src="{{driver.image}}" class="card-source ferrari card-img-top bg-pilot ferrari" alt="...">
                 <div class="container card-body my-3">
                     <div class="row">
@@ -28,7 +28,7 @@
                     <p class="card-text">{{driver.team}}</p>
                 </div>
             </div>
-            <div *ngSwitchCase="'Mercedes'" (click)="detailDriver(driver.id)" class="card card-mercedes" style="width: 18rem;">                
+            <div *ngSwitchCase="'Mercedes'" (click)="detailDriver(driver.id); changeBackground(driver.team)" class="card card-mercedes" style="width: 18rem;">                
                 <img src="{{driver.image}}" class="card-source mercedes card-img-top bg-pilot mercedes" alt="...">
                 <div class="container card-body my-3">
                     <div class="row">
@@ -38,7 +38,7 @@
                     <p class="card-text">{{driver.team}}</p>
                 </div>
             </div>
-            <div *ngSwitchCase="'Aston Martin'" (click)="detailDriver(driver.id)" class="card card-aston-martin" style="width: 18rem;">
+            <div *ngSwitchCase="'Aston Martin'" (click)="detailDriver(driver.id); changeBackground(driver.team)" class="card card-aston-martin" style="width: 18rem;">
                 <img src="{{driver.image}}" class="card-source aston-martin card-img-top bg-pilot aston-martin" alt="...">
                 <div class="container card-body my-3">
                     <div class="row">
@@ -48,7 +48,7 @@
                     <p class="card-text">{{driver.team}}</p>
                 </div>
             </div>
-            <div *ngSwitchCase="'Alpine'" (click)="detailDriver(driver.id)" class="card card-alpine" style="width: 18rem;">                
+            <div *ngSwitchCase="'Alpine'" (click)="detailDriver(driver.id); changeBackground(driver.team)" class="card card-alpine" style="width: 18rem;">                
                 <img src="{{driver.image}}" class="card-source alpine card-img-top bg-pilot alpine" alt="...">
                 <div class="container card-body my-3">
                     <div class="row">
@@ -58,7 +58,7 @@
                     <p class="card-text">{{driver.team}}</p>
                 </div>
             </div>
-            <div *ngSwitchCase="'McLaren'" (click)="detailDriver(driver.id)" class="card card-mclaren" style="width: 18rem;">                
+            <div *ngSwitchCase="'McLaren'" (click)="detailDriver(driver.id); changeBackground(driver.team)" class="card card-mclaren" style="width: 18rem;">                
                 <img src="{{driver.image}}" class="card-source mclaren card-img-top bg-pilot mclaren" alt="...">
                 <div class="container card-body my-3">
                     <div class="row">
@@ -68,7 +68,7 @@
                     <p class="card-text">{{driver.team}}</p>
                 </div>
             </div>
-            <div *ngSwitchCase="'Haas F1 Team'" (click)="detailDriver(driver.id)" class="card card-haas" style="width: 18rem;">                
+            <div *ngSwitchCase="'Haas F1 Team'" (click)="detailDriver(driver.id); changeBackground(driver.team)" class="card card-haas" style="width: 18rem;">                
                 <img src="{{driver.image}}" class="card-source haas card-img-top bg-pilot haas" alt="...">
                 <div class="container card-body my-3">
                     <div class="row">
@@ -78,7 +78,7 @@
                     <p class="card-text">{{driver.team}}</p>
                 </div>
             </div>
-            <div *ngSwitchCase="'Alfa Romeo'" (click)="detailDriver(driver.id)" class="card card-alfa-romeo" style="width: 18rem;">                
+            <div *ngSwitchCase="'Alfa Romeo'" (click)="detailDriver(driver.id); changeBackground(driver.team)" class="card card-alfa-romeo" style="width: 18rem;">                
                 <img src="{{driver.image}}" class="card-source alfa-romeo card-img-top bg-pilot alfa-romeo" alt="...">
                 <div class="container card-body my-3">
                     <div class="row">
@@ -88,7 +88,7 @@
                     <p class="card-text">{{driver.team}}</p>
                 </div>
             </div>
-            <div *ngSwitchCase="'AlphaTauri'" (click)="detailDriver(driver.id)" class="card card-alpha-tauri" style="width: 18rem;">                
+            <div *ngSwitchCase="'AlphaTauri'" (click)="detailDriver(driver.id); changeBackground(driver.team)" class="card card-alpha-tauri" style="width: 18rem;">                
                 <img src="{{driver.image}}" class="card-source alpha-tauri card-img-top bg-pilot alpha-tauri" alt="...">
                 <div class="container card-body my-3">
                     <div class="row">
@@ -98,7 +98,7 @@
                     <p class="card-text">{{driver.team}}</p>
                 </div>
             </div>
-            <div *ngSwitchCase="'Williams'" (click)="detailDriver(driver.id)" class="card card-williams" style="width: 18rem;">                
+            <div *ngSwitchCase="'Williams'" (click)="detailDriver(driver.id); changeBackground(driver.team)" class="card card-williams" style="width: 18rem;">                
                 <img src="{{driver.image}}" class="card-source williams card-img-top bg-pilot williams" alt="...">
                 <div class="container card-body my-3">
                     <div class="row">
